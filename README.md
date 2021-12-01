@@ -32,3 +32,5 @@ development: {
 > ledger.sendCoin(accounts[1], {from: accounts[0], value: 10}) # transfer 10 zeller coins from account0 to account1, it should print out the tranaction log in the console.
 > run the get balance command again to see the balance is changed.
 ```
+
+Now, go to Ganache GUI to view these transactions and blocks.
