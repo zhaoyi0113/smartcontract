@@ -3,6 +3,10 @@
 - Install `truffle`, `geth` command.
 - Install Ganache desktop GUI and launch a `quick start` blockchain instance.
 
+## Structure
+
+- contracts/Ledger.sol  # is the smart contract for zeller coin
+
 ## Deploy
 
 - Configure `truffle-config.js`, networks -> development section for the network you want to connect to. You don't need to change that if you connects to your local instance.

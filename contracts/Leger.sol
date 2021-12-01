@@ -38,20 +38,4 @@ contract Ledger {
         return balances[addr];
     }
 
-    function convert(uint256 amount, uint256 conversionRate)
-        public
-        pure
-        returns (uint256 convertedAmount)
-    {
-        return amount * conversionRate;
-    }
-
-    function getBalanceInZellerCoin(address addr)
-        public
-        view
-        returns (uint256)
-    {
-        return convert(getBalance(addr), 100);
-    }
-
 }
