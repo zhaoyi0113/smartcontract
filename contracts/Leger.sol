@@ -9,16 +9,22 @@ contract Ledger {
 
     event Transfered(address _from, address _to, uint256 amount, uint256 fee);
 
+    modifier hasEnoughBalance {
+        require(balances[msg.sender] >= msg.value, "out of balance");
+        _;
+    }
+
     constructor() payable {
         owner = payable(msg.sender);
         balances[tx.origin] = 10000;
     }
 
     function sendCoin(address payable receiver)
-        public payable
+        public
+        payable
+        hasEnoughBalance
     {
         uint256 amount = msg.value;
-        require(balances[msg.sender] >= amount, "out of balance");
         balances[msg.sender] -= amount;
         balances[receiver] += amount;
         receiver.transfer(amount);
