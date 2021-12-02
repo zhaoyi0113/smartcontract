@@ -1,0 +1,26 @@
+{
+  "name": "smartcontract",
+  "version": "1.0.0",
+  "description": "- Install `truffle`, `geth` command. - Install Ganache desktop GUI and launch a `quick start` blockchain instance.",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhaoyi0113/smartcontract.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhaoyi0113/smartcontract/issues"
+  },
+  "homepage": "https://github.com/zhaoyi0113/smartcontract#readme",
+  "dependencies": {
+    "prb-math": "^2.4.1"
+  }
+}

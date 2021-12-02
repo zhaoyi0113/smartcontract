@@ -29,7 +29,7 @@ development: {
 > let accounts = await web3.eth.getAccounts()
 > (await ledger.getBalance(accounts[0])).toNumber() # get the account0 balance
 > (await ledger.getBalance(accounts[1])).toNumber() # get the account1 balance
-> ledger.sendCoin(accounts[1], {from: accounts[0], value: 10}) # transfer 10 zeller coins from account0 to account1, it should print out the tranaction log in the console.
+> ledger.sendCoin(accounts[1], {from: accounts[0], value: 1000 }) # transfer 10 zeller coins from account0 to account1, it should print out the tranaction log in the console.
 > run the get balance command again to see the balance is changed.
 ```
 
