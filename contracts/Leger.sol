@@ -51,7 +51,7 @@ contract Ledger {
 
         balances[receiver] += amount - fee;
         receiver.transfer(msg.value);
-        emit Transfered(msg.sender, receiver, msg.value, fee);
+        emit Transfered(msg.sender, receiver, msg.value, fee / 1000000000000000000);
     }
 
 
